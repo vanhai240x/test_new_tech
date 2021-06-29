@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlesbar JS</title>
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body>
+    <script type="text" id="template">
+        {{! this is comment}}
+        <h1>{{title}}</h1>
+        <ol>
+            {{#each list}}
+                <li>{{this.name}}</li>
+            {{/each}}
+        </ol>
+        <p>{{footer}}</p>
+    </script>
+    <div id="output"></div>
+    <button onclick="fill_template()">fill template</button>
+
+    <script>
+        function fill_template() {
+            var data = {
+                title: "Handlebars is so cool",
+                list: [
+                    {name: "Tran Van A"},
+                    {name: "Tran Van B"},
+                    {name: "Tran Van C"},
+                    {name: "Tran Van D"},
+                    {name: "Tran Van E"},
+                ],
+                footer: "This is footer",
+            }
+            var template = Handlebars.compile(document.querySelector("#template").innerHTML);
+            var filled = template(data);
+            document.querySelector("#output").innerHTML = filled;
+        }
+    </script>
+</body>
+
+</html>
