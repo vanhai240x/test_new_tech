@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  transition: 0.4s;
+}
+#top .section-1 {
+  background: #5ba5e0;
+}
+#top .section-2 {
+  background: #4ac54f;
+}
+#top .section-3 {
+  background: #e6bf4a;
+}
+#top .section-4 {
+  background: #b37f6e;
+}
+#top .section-5 {
+  background: gray;
+}
+#top .section {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: 0.4s;
+}
