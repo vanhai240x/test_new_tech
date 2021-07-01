@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     new fullpage("#fullpage", {
         licenseKey: 'YOUR KEY HERE',
-        navigation: true,
+        // navigation: true,
         autoScrolling: true,
         scrollHorizontally: true,
         fixedElements: '#header',
+        onLeave: (origin, desctination, direction) => {
+            const section = desctination.item;
+        }
     })
 });
 function fill_template() {
