@@ -1,17 +1,18 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
     // fill_template();
 
     new fullpage("#fullpage", {
         licenseKey: 'YOUR KEY HERE',
-        // navigation: true,
+        navigation: true,
         autoScrolling: true,
         scrollHorizontally: true,
-        fixedElements: '#header',
+        fixedElements: '#header, #scroll',
         onLeave: (origin, desctination, direction) => {
             const section = desctination.item;
         }
     })
 });
+
 function fill_template() {
     var data = {
         lang: {
@@ -38,7 +39,7 @@ function fill_template() {
     document.querySelector("#output").innerHTML = filled;
 
     $('[lang="vi"]').hide();
-    $('#switch-lang').click(function () {
+    $('#switch-lang').click(function() {
         $('[lang="vi"]').toggle();
         $('[lang="en"]').toggle();
     });
