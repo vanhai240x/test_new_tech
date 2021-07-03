@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html translate="   ">
 
 <head>
     <meta charset="UTF-8">
@@ -13,126 +13,162 @@
 </head>
 
 <body>
-    <!-- <script type="text" id="template"> -->
-    <div id="fullpage">
-        <header id="header">
-            <h1><img src="./images/avatar.svg" alt="avatar">Trần Văn Hải</h1>
-            <div class="lang" id="switch-lang">
-                <button lang="en">{{lang.en}}</button>
-                <button lang="vi">{{lang.vi}}</button>
-            </div>
-        </header>
-        <section class="section s1">
-            <div class="container">
-                <h2 class="text-neon" lang="en">Who am I?</h2>
-                <div class="line">
-                    <img src="./images/undraw_profile_details_f8b7.svg" alt="" class="img-decor-1">
-                    <p class="text-multi-color">I am a front-end developer.
-                        <br>I come from Gia Lai, 23 years old.
-                        <br>Now I'm working for Rionlab in Danang city.
-                    </p>
+    <script type="text" id="template">
+        <div id="fullpage">
+            <header id="header">
+                <h1 lang="en"><img src="./images/avatar.svg" alt="avatar" class="logo">{{en.author}}</h1>
+                <h1 lang="vi"><img src="./images/avatar.svg" alt="avatar" class="logo">{{vi.author}}</h1>
+                <div class="lang" id="switch-lang">
+                    <button lang="en">{{lang.en}}</button>
+                    <button lang="vi">{{lang.vi}}</button>
                 </div>
-            </div>
-        </section>
-        <section class="section s2">
-            <div class="container">
-                <h2 class="text-neon" lang="en">Advanced skill</h2>
-                <div class="line">
-                    <img src="./images/undraw_percentages_0rur.svg" alt="" class="img-decor-1">
-                    <p class="text-multi-color">HTML (Pub, Slim).
-                        <br>CSS, SCSS, Bootstrap, UiKit, Materialize css,...
-                        <br>Vanila js, JQuery, Angular+.
-                        <br>Git, Xd, Photoshop,...
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section s3">
-            <div class="container">
-                <h2 class="text-neon" lang="en">Work history</h2>
-                <div class="line">
-                    <img src="./images/undraw_Designer_by46.svg" alt="" class="img-decor-1">
-                    <div class="context">
-                        <h4>4/2019 – 5/2020</h4>
-                        <p class="text-multi-color">In Rionlab
-                            <br>Front end developer
+            </header>
+            <section class="section s1">
+                <div class="container first-slide">
+                    <h2 class="text-neon" lang="en">{{en.who_im_i}}</h2>
+                    <h2 class="text-neon" lang="vi">{{vi.who_im_i}}</h2>
+                    <div class="line">
+                        <img src="./images/undraw_profile_details_f8b7.svg" alt="" class="img-decor-1">
+                        <p class="text-multi-color" lang="en">{{en.intro_1}}
+                            <br>{{en.intro_2}}
+                            <br>{{en.intro_3}}
+                        </p>
+                        <p class="text-multi-color" lang="vi">{{vi.intro_1}}
+                            <br>{{vi.intro_2}}
+                            <br>{{vi.intro_3}}
                         </p>
                     </div>
                 </div>
-                <div class="line">
-                    <img src="./images/undraw_working_from_anywhere_ub67.svg" alt="" class="img-decor-1">
-                    <div class="context">
-                        <h4>6/2020 – 1/2021</h4>
-                        <p class="text-multi-color">In Home
-                            <br>Freelancer
+            </section>
+            <section class="section s2">
+                <div class="container">
+                    <h2 class="text-neon" lang="en">{{en.adv_skill}}</h2>
+                    <h2 class="text-neon" lang="vi">{{vi.adv_skill}}</h2>
+                    <div class="line">
+                        <img src="./images/undraw_percentages_0rur.svg" alt="" class="img-decor-1">
+                        <p class="text-multi-color" lang="en">{{en.skill_1}}
+                            <br>{{en.skill_2}}
+                            <br>{{en.skill_3}}
+                            <br>{{en.skill_4}}
+                        </p>
+                        <p class="text-multi-color" lang="vi">{{vi.skill_1}}
+                            <br>{{vi.skill_2}}
+                            <br>{{vi.skill_3}}
+                            <br>{{vi.skill_4}}
                         </p>
                     </div>
                 </div>
-                <div class="line">
-                    <img src="./images/undraw_quitting_time_dm8t.svg" alt="" class="img-decor-1">
-                    <div class="context">
-                        <h4>2/2021 - Now</h4>
-                        <p class="text-multi-color">In Rionlab
-                            <br>Front end developer
-                        </p>
+            </section>
+            <section class="section s3">
+                <div class="container">
+                    <h2 class="text-neon" lang="en">{{en.history}}</h2>
+                    <h2 class="text-neon" lang="vi">{{vi.history}}</h2>
+                    <div class="line">
+                        <img src="./images/undraw_Designer_by46.svg" alt="" class="img-decor-1">
+                        <div class="context" lang="en">
+                            <h4>{{en.history_1_t}}</h4>
+                            <p class="text-multi-color">{{en.history_1_p_1}}
+                                <br>{{en.history_1_p_2}}
+                            </p>
+                        </div>
+                        <div class="context" lang="vi">
+                            <h4>{{vi.history_1_t}}</h4>
+                            <p class="text-multi-color">{{vi.history_1_p_1}}
+                                <br>{{vi.history_1_p_2}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <img src="./images/undraw_working_from_anywhere_ub67.svg" alt="" class="img-decor-1">
+                        <div class="context" lang="en">
+                            <h4>{{en.history_2_t}}</h4>
+                            <p class="text-multi-color">{{en.history_2_p_1}}
+                                <br>{{en.history_2_p_2}}
+                            </p>
+                        </div>
+                        <div class="context" lang="vi">
+                            <h4>{{vi.history_2_t}}</h4>
+                            <p class="text-multi-color">{{vi.history_2_p_1}}
+                                <br>{{vi.history_2_p_2}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <img src="./images/undraw_quitting_time_dm8t.svg" alt="" class="img-decor-1">
+                        <div class="context" lang="en">
+                            <h4>{{en.history_3_t}}</h4>
+                            <p class="text-multi-color">{{en.history_3_p_1}}
+                                <br>{{en.history_3_p_2}}
+                            </p>
+                        </div>
+                        <div class="context" lang="vi">
+                            <h4>{{vi.history_3_t}}</h4>
+                            <p class="text-multi-color">{{vi.history_3_p_1}}
+                                <br>{{vi.history_3_p_2}}
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section s4">
-            <div class="container">
-                <h2 class="text-neon" lang="en">My hobbits</h2>
-                <div class="grid">
-                    <div class="line">
-                        <img src="./images/hobbit_1.svg" alt="" class="img-decor-1">
-                        <p class="text-multi-color">Playing video game like</p>
-                    </div>
-                    <div class="line">
-                        <img src="./images/hobbit_2.svg" alt="" class="img-decor-1">
-                        <p class="text-multi-color">Listening to music</p>
-                    </div>
-                    <div class="line">
-                        <img src="./images/hobbit_3.svg" alt="" class="img-decor-1">
-                        <p class="text-multi-color">Backpacking</p>
-                    </div>
-                    <div class="line">
-                        <img src="./images/hobbit_4.svg" alt="" class="img-decor-1">
-                        <p class="text-multi-color">Reading books</p>
+            </section>
+            <section class="section s4">
+                <div class="container">
+                    <h2 class="text-neon" lang="en">{{en.hobbit}}</h2>
+                    <h2 class="text-neon" lang="vi">{{vi.hobbit}}</h2>
+                    <div class="grid">
+                        <div class="line">
+                            <img src="./images/hobbit_1.svg" alt="" class="img-decor-1">
+                            <p class="text-multi-color" lang="en">{{en.hobbit_1}}</p>
+                            <p class="text-multi-color" lang="vi">{{vi.hobbit_1}}</p>
+                        </div>
+                        <div class="line">
+                            <img src="./images/hobbit_2.svg" alt="" class="img-decor-1">
+                            <p class="text-multi-color" lang="en">{{en.hobbit_2}}</p>
+                            <p class="text-multi-color" lang="vi">{{vi.hobbit_2}}</p>
+                        </div>
+                        <div class="line">
+                            <img src="./images/hobbit_3.svg" alt="" class="img-decor-1">
+                            <p class="text-multi-color" lang="en">{{en.hobbit_3}}</p>
+                            <p class="text-multi-color" lang="vi">{{vi.hobbit_3}}</p>
+                        </div>
+                        <div class="line">
+                            <img src="./images/hobbit_4.svg" alt="" class="img-decor-1">
+                            <p class="text-multi-color" lang="en">{{en.hobbit_4}}</p>
+                            <p class="text-multi-color" lang="vi">{{vi.hobbit_4}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section s5">
-            <div class="container">
-                <h2 class="text-neon" lang="en">Keep in touch</h2>
-                <div class="grid">
-                    <a class="line" href="https://www.instagram.com/vanhai.infotech/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <p class="text-multi-color">@vanhai.infotech</p>
-                    </a>
-                    <a class="line" href="http://m.me/xxBaryn" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                        <p class="text-multi-color">Van Hai</p>
-                    </a>
-                    <a class="line" href="https://www.linkedin.com/in/tran-van-hai-4283691b0/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <p class="text-multi-color">vanhai240x</p>
-                    </a>
-                    <a class="line" href="skype://tranvanhai240x@gmail.com/chat" target="_blank">
-                        <i class="fab fa-skype"></i>
-                        <p class="text-multi-color">Tran Hai</p>
-                    </a>
-                    <a class="line" href="mailto:tranvanhai240x@gmail.com" target="_blank">
-                        <i class="far fa-envelope"></i>
-                        <p class="text-multi-color">Tran Van Hai</p>
-                    </a>
+            </section>
+            <section class="section s5">
+                <div class="container">
+                    <h2 class="text-neon" lang="en">Keep in touch</h2>
+                    <div class="grid">
+                        <a class="line" href="https://www.instagram.com/vanhai.infotech/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p class="text-multi-color">@vanhai.infotech</p>
+                        </a>
+                        <a class="line" href="http://m.me/xxBaryn" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                            <p class="text-multi-color">Van Hai</p>
+                        </a>
+                        <a class="line" href="https://www.linkedin.com/in/tran-van-hai-4283691b0/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <p class="text-multi-color">vanhai240x</p>
+                        </a>
+                        <a class="line" href="skype://tranvanhai240x@gmail.com/chat" target="_blank">
+                            <i class="fab fa-skype"></i>
+                            <p class="text-multi-color">Tran Hai</p>
+                        </a>
+                        <a class="line" href="mailto:tranvanhai240x@gmail.com" target="_blank">
+                            <i class="far fa-envelope"></i>
+                            <p class="text-multi-color">Tran Van Hai</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <!-- </script> -->
+            </section>
+        </div>
+    </script>
 
-    <!-- <div id="output"></div> -->
+    <div id="output"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
